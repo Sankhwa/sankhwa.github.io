@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Shweta Sankhwar | Academic & Researcher</title>
+    <style>
+        :root {
+            --primary-color: #003366; /* Academic Deep Blue */
+            --secondary-color: #0055a4;
+            --bg-color: #f8f9fa;
+            --text-color: #333333;
+            --light-gray: #e9ecef;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p.subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .hero .contact-links a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            background: var(--white);
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Lists */
+        ul.custom-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.custom-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul.custom-list li::before {
+            content: "▹";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Publications */
+        .pub-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .pub-item:last-child {
+            border-bottom: none;
+        }
+
+        .pub-title {
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        .pub-meta {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Timeline / Experience */
+        .timeline-item {
+            border-left: 3px solid var(--secondary-color);
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 5px;
+            width: 13px;
+            height: 13px;
+            background: var(--primary-color);
+            border-radius: 50%;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: bold;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: var(--light-gray);
+            color: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav ul { gap: 1rem; font-size: 0.9rem; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <h1>Dr. Shweta Sankhwar</h1>
+        <p class="subtitle">Assistant Professor | Academician | Researcher</p>
+        <p>Department of Computer Science, Maitreyi College (University of Delhi)</p>
+        <div class="contact-links" style="margin-top: 15px;">
+            <a href="mailto:ssankhwar@maitreyi.du.ac.in">University Email</a> | 
+            <a href="mailto:shweta.sank@gmail.com">Personal Email</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- About / Research Interests -->
+        <section id="research">
+            <h2>About & Research Interests</h2>
+            <p>I am an academician and researcher with a strong background in Computer Science, specializing in Cyber Security and Machine Learning. My Ph.D. research focused on the empirical detection and prevention of E-mail Phishing. Currently, I serve as an Assistant Professor at Maitreyi College, University of Delhi, where I am dedicated to fostering the next generation of tech professionals while actively contributing to the global research community through interdisciplinary studies in IoT security, health informatics, and predictive modeling.</p>
+            <br>
+            <h3>Core Research Areas:</h3>
+            <div class="skills-container" style="margin-top: 10px;">
+                <span class="skill-tag">Cyber Security</span>
+                <span class="skill-tag">Machine Learning & AI</span>
+                <span class="skill-tag">Phishing Detection</span>
+                <span class="skill-tag">IoT Security</span>
+                <span class="skill-tag">Health Informatics</span>
+                <span class="skill-tag">Data Mining</span>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Selected Research Publications</h2>
+            <p><em>For a complete list of my publications, please visit my <a href="#" target="_blank">Google Scholar</a> or <a href="#" target="_blank">ORCID</a> profile.</em></p>
+            <br>
+            
+            <div class="pub-item">
+                <p class="pub-title">A novel model to predict the effects of enhanced students’ computer interaction on their health in covid-19 pandemics.</p>
+                <p class="pub-meta">Agarwal, N., Mohanty, S. N., <strong>Sankhwar, S.</strong>, & Dash, J. K. (2023). <em>New Generation Computing</em>, 1–34.</p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">An enhanced intelligent model: To protect marine IoT sensor environment using ensemble machine learning approach.</p>
+                <p class="pub-meta">Tiwari, D., Bhati, B. S., Nagpal, B., <strong>Sankhwar, S.</strong>, & Al-Turjman, F. (2021). <em>Ocean Engineering</em>, 242, 110180.</p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">Improved grey wolf optimization-based feature subset selection with fuzzy neural classifier for financial crisis prediction.</p>
+                <p class="pub-meta"><strong>Sankhwar, S.</strong>, Gupta, D., Ramya, K., et al. (2020). <em>Soft Computing</em>, 24(1), 101–110.</p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">An anti-phishing enterprise environ model using feed-forward backpropagation and levenberg-marquart method.</p>
+                <p class="pub-meta"><strong>Sankhwar, S.</strong>, Pandey, D., & Khan, R. (2020). <em>Security and Privacy</em>, In Press.</p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">Email phishing: An enhanced classification model to detect malicious URLs.</p>
+                <p class="pub-meta"><strong>Sankhwar, S.</strong>, Pandey, D., & Khan, R. (2019). <em>EAI Endorsed Transactions on Scalable Information Systems</em>, 6(21).</p>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section id="experience">
+            <h2>Academic Experience & Education</h2>
+            
+            <div class="timeline-item">
+                <p class="date">April 2021 – Present</p>
+                <h3>Assistant Professor</h3>
+                <p>Department of Computer Science, Maitreyi College (University of Delhi), New Delhi</p>
+            </div>
+
+            <div class="timeline-item">
+                <p class="date">2014 – 2019</p>
+                <h3>Ph.D. in Cyber Security</h3>
+                <p>Babasaheb Bhimrao Ambedkar University (A Central University), Lucknow</p>
+                <p><strong>Thesis:</strong> <em>An Empirical Approach on Detection and Prevention of E-mail Phishing using Machine Learning Techniques.</em></p>
+            </div>
+
+            <div class="timeline-item">
+                <p class="date">Aug 2019 – Dec 2019</p>
+                <h3>Resource Person</h3>
+                <p>Department of Information Technology, School of Science and Technology, Babasaheb Bhimrao Ambedkar University, Lucknow</p>
+            </div>
+
+            <div class="timeline-item">
+                <p class="date">2012 – 2014</p>
+                <h3>M.Sc. Information Technology</h3>
+                <p>Babasaheb Bhimrao Ambedkar University, Lucknow | <em>First Class Honours, Department Gold Medalist</em></p>
+            </div>
+        </section>
+
+        <!-- Awards & Honors -->
+        <section id="awards">
+            <h2>Awards, Honors & Fellowships</h2>
+            <ul class="custom-list">
+                <li><strong>Women in Academics Award (2022):</strong> Honoured by Nikhil Bharat Shiksha Parishad at Bengal Education Conclave and Shiksha Samman 2022.</li>
+                <li><strong>UGC-Dr. D.S. Kothari Post Doctoral Fellow (DSKPDF) (2021):</strong> Selected for prestigious Postdoctoral Fellowship Award.</li>
+                <li><strong>Session Chair & Moderator (2022):</strong> International Health Informatics Conference (Springer), ICSVCE2022, and EAI ICISML 2022.</li>
+                <li><strong>Best Paper Presentation Award (2015):</strong> For the article "Cyber Crime: Trends and Issues" at LUSCON-2015.</li>
+                <li><strong>Gold Medals for Outstanding Performance (2015):</strong> University honoured for outstanding student performance in M.Sc. IT.</li>
+            </ul>
+        </section>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills & Tools</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">R</span>
+                <span class="skill-tag">MATLAB</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">SQL / MySQL</span>
+                <span class="skill-tag">ASP.NET / C#</span>
+                <span class="skill-tag">HTML / CSS / JS</span>
+                <span class="skill-tag">Apache / Tomcat</span>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p><strong>Office Address:</strong> Department of Computer Science, Maitreyi College, University of Delhi, Chanakyapuri, New Delhi-110021, India.</p>
+            <p><strong>University Email:</strong> <a href="mailto:ssankhwar@maitreyi.du.ac.in">ssankhwar@maitreyi.du.ac.in</a></p>
+            <p><strong>Personal Email:</strong> <a href="mailto:shweta.sank@gmail.com">shweta.sank@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91-9616566276</p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Dr. Shweta Sankhwar. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
